@@ -2,12 +2,16 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-style: 16px;
+  font-weight: 400;
 }
+
 .header {
   display: flex;
   align-items: center;
   padding: 20px 70px 20px 35px;
+  margin-bottom: 30px;
 }
 .menu-button {
   padding: 0;
@@ -33,6 +37,7 @@ body {
 }
 .input-group {
   background: #ebebeb;
+  border: 1px rgb(207, 205, 205) solid;
   border-radius: 22px;
   display: flex;
   justify-content: space-between;
@@ -42,10 +47,11 @@ body {
   width: 50%;
 }
 .input-search {
-  padding: 0;
   background-color: transparent;
   border: none;
+  border-radius: 22px;
   padding: 12px 23px 12px 23px;
+  width: 100%;
 }
 .button-search {
   width: 19px;
@@ -77,5 +83,48 @@ body {
 .user-avatar {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+}
+/* /.header */
+
+.sidebar {
+  padding-left: 32px;
+}
+.nav-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+.nav-menu {
+  margin-top: 0px;
+  margin-bottom: 60px;
+  padding-left: 0;
+  list-style: none;
+}
+.nav-item {
+  margin-bottom: 28px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #898989;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #ff0000;
+}
+.nav-link:hover .icon {
+  fill: #ff0000;
+}
+.nav-item .icon {
+  fill: #898989;
+}
+.nav-text {
+  margin-left: 13px;
+}
+.nav-image {
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
 }
