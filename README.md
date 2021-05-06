@@ -2,8 +2,8 @@
  Выполнили: Волощук Д., Жаровля Т.
 
 ## Используемые технологии:
--HTML
--CSS
--Normalize
--SVG Sprites
--Fonts
+*HTML
+*CSS
+*Normalize
+*SVG Sprites
+*Fonts
