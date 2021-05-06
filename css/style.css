@@ -259,6 +259,7 @@ body {
 .recommended-buttons {
   position: absolute;
   right: 12%;
+  top: 3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -280,7 +281,6 @@ body {
 .rec-header {
   display: flex;
   align-items: center;
-  position: relative;
 }
 .rec-text {
   font-size: 16px;
@@ -319,12 +319,28 @@ body {
   }
 }
 
+@media (max-width: 1040px) {
+  .rec-text {
+    display: none;
+  }
+}
+
 @media (max-width: 880px) {
   .icons {
     display: none;
   }
   .user {
     margin-left: auto;
+  }
+  .rec-header {
+    margin-bottom: 40px;
+  }
+  .channel-text {
+    font-size: 22px;
+  }
+  .subscribe-button {
+    top: 17%;
+    left: 35px;
   }
   .rec-text {
     display: none;
@@ -414,17 +430,20 @@ body {
 
   .channel-title {
     font-size: 22px;
+    line-height: 20px;
   }
   .rec-text {
     display: none;
   }
   .rec-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 20px;
   }
   .subscribe-button {
     width: 130px;
     height: 30px;
-    margin-top: 45px;
-    right: 0;
-  }
+    top: 60px;
+    margin: auto;
 }
